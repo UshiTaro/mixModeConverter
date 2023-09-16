@@ -29,9 +29,9 @@ Mi = np.linalg.inv(M)
 sMM = np.matmul(np.matmul(M, s4), Mi)
 
 sDD = sMM[:,:2,:2]
-sDC = sMM[:, 2:,:2]
+sDC = sMM[:, :2,2:]
 sCC = sMM[:,2:,2:]
-sCD = sMM[:, :2,2:]
+sCD = sMM[:, 2:,:2]
 
 netDD = rf.Network(frequency=freq, s=sDD)
 netDC = rf.Network(frequency=freq, s=sDC)

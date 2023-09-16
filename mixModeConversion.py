@@ -23,10 +23,10 @@ s4 = net.s
 M = np.array([[1, 0, -1, 0],
               [0, 1, 0, -1],
               [1, 0, 1, 0],
-              [0, 1, 0, 1]], dtype=complex)
+              [0, 1, 0, 1]], dtype=complex)/np.sqrt(2)
 Mi = np.linalg.inv(M)
 
-sMM = np.matmul(np.matmul(M, s4), Mi)/2
+sMM = np.matmul(np.matmul(M, s4), Mi)
 
 sDD = sMM[:,:2,:2]
 sDC = sMM[:, 2:,:2]

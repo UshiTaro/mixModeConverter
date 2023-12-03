@@ -12,3 +12,5 @@ Of the 4 ports, odd numbers (1, 3) and even numbers (2, 4) must be paired.
       |[.s4p]|    ->     |------+------|
     3-|      |-4      1'-|cd.s2p|cc.s2p|-2'
 ```
+
+This program uses numpy for matrix calculations and scikit-rf for touchstone file I/O.

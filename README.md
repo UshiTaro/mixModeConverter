@@ -14,3 +14,4 @@ Of the 4 ports, odd numbers (1, 3) and even numbers (2, 4) must be paired.
 ```
 
 This program uses numpy for matrix calculations and scikit-rf for touchstone file I/O.
+Check out [this page on mixed-mode S-parameters](http://ushi.ml/tools/mix.html) for theoretical background
